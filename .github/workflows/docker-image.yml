@@ -1,4 +1,4 @@
-name: Docker Image CI
+name: Docker Image CD
 
 on:
   push:
@@ -21,4 +21,4 @@ jobs:
       uses: docker/build-push-action@v6
       with:
         push: true
-        tags: matteek/bot-performance-points-service:latest
+        tags: matteek/performance-points-service:latest
