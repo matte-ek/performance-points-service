@@ -16,6 +16,6 @@ COPY --from=builder /performance-points-service/target/release/performance-point
 
 USER service
 
-STOPSIGNAL SIGINT
+STOPSIGNAL SIGKILL
 
 ENTRYPOINT ["/usr/local/bin/performance-points-service"]
